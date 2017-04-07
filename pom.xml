@@ -13,7 +13,7 @@
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
         <artifactId>isyfact-masterpom-lib</artifactId>
-        <version>1.3.2</version>
+        <version>1.4.0</version>
     </parent>
 
     <dependencyManagement>
@@ -27,7 +27,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Standardkomponente der IsyFact. -->
+            <!-- Standardkomponenten der IsyFact. -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-batchrahmen</artifactId>
@@ -53,16 +53,25 @@
                 <artifactId>isy-serviceapi-sst</artifactId>
                 <version>1.5.0</version>
             </dependency>
+            <!-- TODO: isy-session einbinden
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-session</artifactId>
+                <version>x.y.z</version>
+            </dependency>
+            -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-ueberwachung</artifactId>
                 <version>1.5.0</version>
             </dependency>
+            <!-- TODO: SNAPSHOT entfernen, wenn isy-web final und deployed ist -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.4.0</version>
+                <version>4.3.2-SNAPSHOT</version>
             </dependency>
+            
         </dependencies>
     </dependencyManagement>
 
