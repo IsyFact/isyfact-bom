@@ -53,23 +53,20 @@
                 <artifactId>isy-serviceapi-sst</artifactId>
                 <version>1.5.0</version>
             </dependency>
-            <!-- TODO: isy-session einbinden
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-session</artifactId>
-                <version>x.y.z</version>
+                <version>1.1.0</version>
             </dependency>
-            -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-ueberwachung</artifactId>
                 <version>1.5.0</version>
             </dependency>
-            <!-- TODO: SNAPSHOT entfernen, wenn isy-web final und deployed ist -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.3.2-SNAPSHOT</version>
+                <version>4.3.2</version>
             </dependency>
             
         </dependencies>
