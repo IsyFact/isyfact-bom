@@ -55,11 +55,6 @@
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
-                <artifactId>isy-session</artifactId>
-                <version>1.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-ueberwachung</artifactId>
                 <version>1.5.1</version>
             </dependency>
