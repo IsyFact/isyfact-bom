@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.bund.bva.isyfact</groupId>
+    <artifactId>isyfact-release-pom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.4.0-RC1-SNAPSHOT</version>
+    <name>IsyFact-Release POM</name>
+    <description>Bindet alle Dependencies der IF-BOM ein, um die Dependencies eines Isy Factory Releases in ein lokales Maven Repository zu exportieren.</description>
+
+    <parent>
+        <groupId>de.bund.bva.isyfact</groupId>
+        <artifactId>isyfact-masterpom-lib</artifactId>
+        <version>1.4.1</version>
+    </parent>
+
+    <profiles>
+        <profile>
+            <id>downloadSources</id>
+            <properties>
+                <downloadSources>true</downloadSources>
+                <downloadJavadocs>true</downloadJavadocs>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isyfact-bom</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- IsyFact-Base -->
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-aufrufkontext</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-exception-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-exception-sst</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-konfiguration</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-sicherheit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-sonderzeichen</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-util</artifactId>
+        </dependency>
+        <!-- IsyFact-Standards -->
+        <!--
+            <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-datetime</artifactId>
+            </dependency>
+        -->
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-batchrahmen</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-polling</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-serviceapi-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-serviceapi-sst</artifactId>
+        </dependency>
+        <!--
+            <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-task</artifactId>
+            </dependency>
+        -->
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-ueberwachung</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.bund.bva.isyfact</groupId>
+            <artifactId>isy-web</artifactId>
+        </dependency>
+    </dependencies>
+</project>
