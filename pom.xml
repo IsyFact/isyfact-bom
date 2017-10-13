@@ -6,7 +6,7 @@
     <groupId>de.bund.bva.isyfact</groupId>
     <artifactId>isyfact-bom</artifactId>
     <packaging>pom</packaging>
-    <version>1.4.0-RC1-SNAPSHOT</version>
+    <version>1.4.0-RC1</version>
     <name>IsyFact BOM</name>
     <description>Definiert die Versionen aller Bibliotheken der IsyFact-Basis und IsyFact-Standard Komponenten sowie die genutzten Produkte.</description>
 
@@ -33,13 +33,11 @@
                 <artifactId>isy-batchrahmen</artifactId>
                 <version>1.7.0</version>
             </dependency>
-            <!--
-                <dependency>
+            <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-datetime</artifactId>
                 <version>1.0.0</version>
-                </dependency>
-            -->
+            </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-persistence</artifactId>
@@ -60,13 +58,11 @@
                 <artifactId>isy-serviceapi-sst</artifactId>
                 <version>1.5.1</version>
             </dependency>
-            <!--
-                <dependency>
+            <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-task</artifactId>
                 <version>1.0.0</version>
-                </dependency>
-            -->
+            </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-ueberwachung</artifactId>
