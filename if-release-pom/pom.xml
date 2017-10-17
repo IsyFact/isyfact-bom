@@ -6,7 +6,7 @@
     <groupId>de.bund.bva.isyfact</groupId>
     <artifactId>isyfact-release-pom</artifactId>
     <packaging>pom</packaging>
-    <version>1.4.0-RC2-SNAPSHOT</version>
+    <version>1.4.0-RC2</version>
     <name>IsyFact-Release POM</name>
     <description>Bindet alle Dependencies der IF-BOM ein, um die Dependencies eines Isy Factory Releases in ein lokales Maven Repository zu exportieren.</description>
 
