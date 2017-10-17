@@ -22,7 +22,7 @@
             <!-- 3rd-Party Bibliotheken der IsyFact. -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
-                <artifactId>if-products-bom</artifactId>
+                <artifactId>isyfact-products-bom</artifactId>
                 <version>1.4.0-RC1</version>
                 <type>pom</type>
                 <scope>import</scope>
