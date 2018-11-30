@@ -6,14 +6,14 @@
     <groupId>de.bund.bva.isyfact</groupId>
     <artifactId>isyfact-bom</artifactId>
     <packaging>pom</packaging>
-    <version>1.6.0.RC2</version>
+    <version>1.6.0</version>
     <name>IsyFact BOM</name>
     <description>Definiert die Versionen aller Bibliotheken der IsyFact-Standard Komponenten, der IsyFact-Erweiterungen sowie die genutzten Produkte.</description>
 
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
         <artifactId>isyfact-standards-bom</artifactId>
-        <version>1.6.0.RC2</version>
+        <version>1.6.0</version>
     </parent>
 
     <dependencyManagement>
@@ -23,7 +23,7 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isyfact-products-bom</artifactId>
-                <version>1.6.0.RC2</version>
+                <version>1.6.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -32,12 +32,12 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-style</artifactId>
-                <version>4.1.0.RC2</version>
+                <version>4.1.0</version>
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.7.0.RC2</version>
+                <version>4.7.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
