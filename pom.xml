@@ -32,7 +32,7 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-style</artifactId>
-                <version>4.1.2-SNAPSHOT</version>
+                <version>4.1.2</version>
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
