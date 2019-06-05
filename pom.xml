@@ -3,10 +3,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.bund.bva.isyfact</groupId>
     <artifactId>isyfact-bom</artifactId>
     <packaging>pom</packaging>
-    <version>1.7.0</version>
+    <version>1.7.1</version>
     <name>IsyFact BOM</name>
     <description>Definiert die Versionen aller Bibliotheken der IsyFact-Standard Komponenten, der IsyFact-Erweiterungen sowie die genutzten Produkte.</description>
 
@@ -32,7 +31,7 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-style</artifactId>
-                <version>4.2.0</version>
+                <version>4.2.1</version>
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
