@@ -5,7 +5,7 @@
 
     <artifactId>isyfact-release-pom</artifactId>
     <packaging>pom</packaging>
-    <version>1.7.1</version>
+    <version>1.7.2</version>
     <name>IsyFact-Release POM</name>
     <description>Bindet alle Dependencies der IF-BOM ein, um die Dependencies eines Isy Factory Releases in ein lokales Maven Repository zu exportieren.</description>
 
