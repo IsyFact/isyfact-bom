@@ -36,12 +36,12 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.9.0</version>
+                <version>4.9.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.9.0</version>
+                <version>4.9.1-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
