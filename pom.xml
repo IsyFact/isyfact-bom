@@ -5,7 +5,7 @@
 
     <artifactId>isyfact-bom</artifactId>
     <packaging>pom</packaging>
-    <version>1.7.2</version>
+    <version>1.7.3</version>
     <name>IsyFact BOM</name>
     <description>Definiert die Versionen aller Bibliotheken der IsyFact-Standard Komponenten, der IsyFact-Erweiterungen sowie die genutzten Produkte.</description>
 
@@ -31,12 +31,12 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-style</artifactId>
-                <version>4.2.1</version>
+                <version>4.2.2</version>
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.8.1</version>
+                <version>4.8.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
