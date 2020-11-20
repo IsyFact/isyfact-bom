@@ -17,6 +17,7 @@ cache:
 .template: &vorlage
   tags:
    - zssi
+   - docker
   retry: 1
 
 #Buildstage
