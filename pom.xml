@@ -5,11 +5,11 @@
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
         <artifactId>isyfact-standards-bom</artifactId>
-        <version>1.8.1</version>
+        <version>1.8.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>isyfact-bom</artifactId>
-    <version>1.8.2</version>
+    <version>1.8.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>IsyFact BOM</name>
@@ -22,7 +22,7 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isyfact-products-bom</artifactId>
-                <version>1.8.1</version>
+                <version>1.8.3-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -36,12 +36,12 @@
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.9.1</version>
+                <version>4.9.2-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
-                <version>4.9.1</version>
+                <version>4.9.2-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
