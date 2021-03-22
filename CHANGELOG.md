@@ -1,5 +1,5 @@
 # 1.9.0
-- `IFS-848`: Isy Style 4.4.0
+- `IFS-848`: Isy Style 4.4.0 und Isy Web 4.10.0
 
 # 1.8.3
 - `IFS-786`: Konfiguration von Quality Gate 1; Umstellung auf GitLabCI Templates
