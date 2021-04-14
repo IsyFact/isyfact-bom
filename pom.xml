@@ -12,7 +12,9 @@
     <packaging>pom</packaging>
 
     <name>IsyFact BOM</name>
-    <description>Definiert die Versionen aller Bibliotheken der IsyFact-Standard Komponenten, der IsyFact-Erweiterungen sowie die genutzten Produkte.</description>
+    <description>Definiert die Versionen aller Bibliotheken der IsyFact-Standard Komponenten, der IsyFact-Erweiterungen
+        sowie die genutzten Produkte.
+    </description>
 
     <properties>
         <isy-style.version>5.1.0-SNAPSHOT</isy-style.version>
@@ -53,4 +55,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>tidy-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
