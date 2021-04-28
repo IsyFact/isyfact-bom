@@ -1,3 +1,6 @@
+# 1.9.0
+- `IFS-848`: Isy Style 4.4.0 und Isy Web 4.10.0
+
 # 1.8.3
 - `IFE-133`,`IFE-271`: Isy Web auf 4.9.2 gesetzt.
 - `IFS-650`: Isy Style auf 4.3.3 gesetzt.
