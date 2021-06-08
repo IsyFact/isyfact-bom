@@ -1,4 +1,4 @@
-#1.10.0
+# 1.10.0
 - `IFS-1005`: Update Isy-Style auf Version 4.5.0
 
 # 1.9.0
