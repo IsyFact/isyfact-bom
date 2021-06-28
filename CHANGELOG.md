@@ -1,3 +1,8 @@
+# v2.3.0
+- `IFS-970`:
+    - Update auf Version IF 2.3
+    - Update Isy-Web auf Version 5.2.0
+
 # v2.2.0
 - `IFE-57`: Update Isy-Web auf Version 5.1.0
 - `IFS-786`: Konfiguration von Quality Gate 1; Umstellung auf GitLabCI Templates
