@@ -18,7 +18,7 @@
 
     <properties>
         <isy-style.version>5.2.0</isy-style.version>
-        <isy-web.version>5.2.0</isy-web.version>
+        <isy-web.version>5.2.0-SNAPSHOT</isy-web.version>
     </properties>
 
     <dependencyManagement>
