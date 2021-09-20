@@ -1,8 +1,12 @@
-# v2.3.0
+# v2.4.0
 - `IFS-970`:
-    - Update auf Version IF 2.3
-    - Update Isy-Web auf Version 5.2.0
+    - Update auf Version IF 2.4
+    - Update Isy-Web auf Version 5.3.0
+- `IFS-1024`: Update Isy-Style auf Version 5.4.0
+
+# v2.3.0
 - `IFS-1005`: Update Isy-Style auf Version 5.3.0
+- `IFS-1115`: Update Isy-Web auf Version 5.2.0
 
 # v2.2.0
 - `IFE-57`: Update Isy-Web auf Version 5.1.0
