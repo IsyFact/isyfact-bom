@@ -1,3 +1,6 @@
+# v2.5.0
+- `IFS-1282`: Einführung von Maven CI-friendly Versionen
+
 # v2.4.0
 - `IFS-970`:
     - Update auf Version IF 2.4
