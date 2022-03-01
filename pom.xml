@@ -19,6 +19,8 @@
         <dependencies>
 
             <!-- 3rd-Party Bibliotheken der IsyFact. -->
+            <!-- ### -->
+            <!-- 3rd party libraries of the IsyFact. -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isyfact-products-bom</artifactId>
@@ -28,6 +30,8 @@
             </dependency>
 
             <!-- IsyFact Erweiterungen -->
+            <!-- ### -->
+            <!-- IsyFact Extensions -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-style</artifactId>
