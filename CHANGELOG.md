@@ -1,3 +1,5 @@
+# v2.5.0
+
 # v2.4.0
 - `IFS-970`:
     - Update auf Version IF 2.4
