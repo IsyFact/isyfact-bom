@@ -1,5 +1,6 @@
 # 1.11.0
-- `IFE-177`: Update Isy Web to 4.12.0
+- `IFE-177`: Update isy-web auf Version 4.12.0
+- `IFE-483`: Update isy-style auf Version 4.5.1
 
 # 1.10.0
 - `IFS-1005`: Update Isy-Style auf Version 4.5.0
