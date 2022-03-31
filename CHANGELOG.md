@@ -1,3 +1,6 @@
+# v2.4.1
+- `IFS-1397`: Anhebung auf Isyfact-erweiterungen 2.4.1 mit Spring Boot 2.5.12 (Fix CVE-2022-22965)
+
 # v2.4.0
 - `IFS-970`:
     - Update auf Version IF 2.4
