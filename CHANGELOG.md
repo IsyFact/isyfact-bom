@@ -1,3 +1,6 @@
+# v2.2.2
+- `IFS-1397`: Update IsyFact Standards auf 2.2.2 und Isy-Web auf Version 5.1.1 (CVE-2022-22965)
+
 # v2.2.0
 - `IFE-57`: Update Isy-Web auf Version 5.1.0
 - `IFS-786`: Konfiguration von Quality Gate 1; Umstellung auf GitLabCI Templates
