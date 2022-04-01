@@ -1,5 +1,6 @@
 # v2.2.2
-- `IFS-1397`: Update IsyFact Standards auf 2.2.2 und Isy-Web auf Version 5.1.1 (CVE-2022-22965)
+- `IFS-1398`: Update IsyFact Standards auf 2.2.2 und Isy-Web auf Version 5.1.1 (CVE-2022-22965)
+- `IFE-484`: Isy Style auf 5.2.1 gesetzt.
 
 # v2.2.0
 - `IFE-57`: Update Isy-Web auf Version 5.1.0
