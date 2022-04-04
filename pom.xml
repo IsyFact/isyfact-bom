@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>isyfact-bom</artifactId>
+    <version>2.2.1</version>
     <packaging>pom</packaging>
 
     <name>IsyFact BOM</name>
@@ -17,7 +18,7 @@
     </description>
 
     <properties>
-        <isy-style.version>5.2.0</isy-style.version>
+        <isy-style.version>5.2.1</isy-style.version>
         <isy-web.version>5.1.0</isy-web.version>
     </properties>
 
@@ -25,6 +26,8 @@
         <dependencies>
 
             <!-- 3rd-Party Bibliotheken der IsyFact. -->
+            <!-- ### -->
+            <!-- 3rd party libraries of the IsyFact. -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isyfact-products-bom</artifactId>
@@ -34,6 +37,8 @@
             </dependency>
 
             <!-- IsyFact Erweiterungen -->
+            <!-- ### -->
+            <!-- IsyFact Extensions -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-style</artifactId>
