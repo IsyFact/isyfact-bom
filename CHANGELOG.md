@@ -1,3 +1,6 @@
+# v2.4.1
+- `IFE-484`: Isy Style auf 5.4.1 gesetzt.
+
 # v2.4.0
 - `IFS-970`:
     - Update auf Version IF 2.4
