@@ -1,4 +1,5 @@
 # v2.4.1
+- `IFS-1397`: Anhebung auf Isyfact-erweiterungen 2.4.1 mit Spring Boot 2.5.12 (Fix CVE-2022-22965)
 - `IFE-484`: Isy Style auf 5.4.1 gesetzt.
 
 # v2.4.0
