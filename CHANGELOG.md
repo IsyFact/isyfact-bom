@@ -1,3 +1,6 @@
+# v2.3.1
+- `IFE-484`: Isy Style auf 5.3.1 gesetzt.
+
 # v2.3.0
 - `IFS-1005`: Update Isy-Style auf Version 5.3.0
 - `IFS-1115`: Update Isy-Web auf Version 5.2.0
