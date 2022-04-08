@@ -18,7 +18,7 @@
     </description>
 
     <properties>
-        <revision>0.0.0-SNAPSHOT</revision>
+        <revision>${project.parent.version}</revision>
         <isy-web.version>5.4.0-SNAPSHOT</isy-web.version>
         <isy-style.version>5.5.0-SNAPSHOT</isy-style.version>
     </properties>
