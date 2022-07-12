@@ -1,3 +1,6 @@
+# v3.0.0
+- `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.1)
+
 # v2.5.0
 - `IFS-1282`: Einführung von Maven CI-friendly Versionen
 
