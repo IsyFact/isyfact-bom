@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.3
+
+- IFS-1701: Anhebung - isy-style 5.4.3
+
 ## v2.4.2
 
 - IFS-1529: Anhebungen - isy-style 5.4.2, isy-web 5.3.3, isyfact-erweiterungen 2.4.2
