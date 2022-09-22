@@ -3,6 +3,8 @@
 ## v2.4.3
 
 - IFS-1701: Anhebung - isy-style 5.4.3
+- IFS-1845: Anhebung IF-Standards auf 2.4.3
+  - Anhebung isy-web auf 5.3.4
 
 ## v2.4.2
 
