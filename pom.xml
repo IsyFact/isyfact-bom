@@ -19,7 +19,7 @@
 
     <properties>
         <revision>${project.parent.version}</revision>
-        <isy-web.version>5.4.0-SNAPSHOT</isy-web.version>
+        <isy-web.version>6.0.0-SNAPSHOT</isy-web.version>
         <isy-style.version>5.5.0-SNAPSHOT</isy-style.version>
     </properties>
 
