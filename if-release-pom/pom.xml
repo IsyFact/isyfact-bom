@@ -5,11 +5,11 @@
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
         <artifactId>isyfact-standards</artifactId>
-        <version>2.4.4-SNAPSHOT</version>
+        <version>2.4.4</version>
     </parent>
 
     <artifactId>isyfact-release-pom</artifactId>
-    <version>2.4.4-SNAPSHOT</version>
+    <version>2.4.4</version>
     <packaging>pom</packaging>
 
     <name>IsyFact-Release POM</name>
