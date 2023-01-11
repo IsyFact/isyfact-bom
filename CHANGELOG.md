@@ -1,3 +1,5 @@
+# 1.12.0
+
 # 1.11.0
 - `IFE-177`,`IFE-424`: Update isy-web auf Version 4.12.0
 - `IFS-728`: Update isy-style auf Version 4.6.0
