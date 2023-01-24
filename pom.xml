@@ -20,7 +20,6 @@
     <properties>
         <revision>${project.parent.version}</revision>
         <isy-web.version>6.0.0-SNAPSHOT</isy-web.version>
-        <isy-style.version>5.5.0-SNAPSHOT</isy-style.version>
     </properties>
 
     <dependencyManagement>
@@ -36,11 +35,6 @@
             </dependency>
 
             <!-- IsyFact Erweiterungen -->
-            <dependency>
-                <groupId>de.bund.bva.isyfact</groupId>
-                <artifactId>isy-style</artifactId>
-                <version>${isy-style.version}</version>
-            </dependency>
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
