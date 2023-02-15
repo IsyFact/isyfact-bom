@@ -1,6 +1,7 @@
 # Changelog
 
 ## v2.4.5
+- IFS-2264: Anhebung IF-Standards auf 2.4.5
 
 ## v2.4.4
 
