@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.4.5
+- IFS-2433: Anhebung IF-Standards auf 2.4.5
+
 ## v2.4.4
 
 - IFS-1997: Anhebung IF-Standards auf 2.4.4 (Fix CVE-2022-42889)
