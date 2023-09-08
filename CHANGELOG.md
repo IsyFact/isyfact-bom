@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.5.0
+- ISY-218: Anhebung IF-Standards auf 2.5.0
+
 ## v2.4.5
 - IFS-2264: Anhebung IF-Standards auf 2.4.5
 
