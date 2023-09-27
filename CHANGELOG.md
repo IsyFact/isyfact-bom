@@ -1,5 +1,5 @@
 # v3.0.0
-- `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.1)
+- `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.x)
 - `IFS-1616`: Update Isy-Web auf Version 6.0.0
 - `IFS-1986`: `isy-style` nach Auflösung entfernt
 
