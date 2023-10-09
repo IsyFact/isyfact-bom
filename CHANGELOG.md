@@ -2,6 +2,7 @@
 
 ## v2.5.0
 - ISY-218: Anhebung IF-Standards auf 2.5.0
+- ISY-391: SBOM-Erstellung und GPG-Signierung beim Deploy hinzugefügt
 
 ## v2.4.5
 - IFS-2264: Anhebung IF-Standards auf 2.4.5
