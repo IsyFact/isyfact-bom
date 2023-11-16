@@ -1,6 +1,0 @@
-include:
-  - project: 'IsyFact/isy-gitlabci-templates'
-    file: '/maven/.gitlab-ci-maven-all.yml'
-
-variables:
-  NEXT_VERSION: 3.0.0
