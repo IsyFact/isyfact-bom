@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
-        <artifactId>isyfact-standards-bom</artifactId>
-        <version>3.0.0</version>
+        <artifactId>isyfact-parent</artifactId>
+        <version>4.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>isyfact-bom</artifactId>
@@ -16,10 +16,19 @@
     <description>Definiert die Versionen aller Bibliotheken der IsyFact-Standard Komponenten, der IsyFact-Erweiterungen
         sowie die genutzten Produkte.
     </description>
+    <url>http://isyfact.de</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/IsyFact/isyfact-bom.git</connection>
+        <developerConnection>scm:git:ssh://github.com:IsyFact/isyfact-bom.git</developerConnection>
+        <url>https://github.com/IsyFact/isyfact-bom</url>
+    </scm>
 
     <properties>
         <revision>${project.parent.version}</revision>
         <isy-web.version>6.0.0</isy-web.version>
+        <isy-exception-sst.version>1.10.0</isy-exception-sst.version>
+        <isy-serviceapi-sst.version>1.10.0</isy-serviceapi-sst.version>
     </properties>
 
     <dependencyManagement>
@@ -34,43 +43,99 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- IsyFact Standards -->
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-aufrufkontext</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-batchrahmen</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-datetime</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-exception-core</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-konfiguration</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-logging</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-persistence</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-polling</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-serviceapi-core</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-sicherheit</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-sonderzeichen</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-task</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-ueberwachung</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-util</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-exception-sst</artifactId>
+                <version>${isy-exception-sst.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isy-serviceapi-sst</artifactId>
+                <version>${isy-serviceapi-sst.version}</version>
+            </dependency>
+
             <!-- IsyFact Erweiterungen -->
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isy-web</artifactId>
                 <version>${isy-web.version}</version>
             </dependency>
-
-            <!-- Isy-Web DependencyManagement -->
-            <dependency>
-                <groupId>de.bund.bva.isyfact</groupId>
-                <artifactId>isy-web</artifactId>
-                <version>${isy-web.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>tidy-maven-plugin</artifactId>
-                    <version>1.1.0</version>
-                    <executions>
-                        <execution>
-                            <id>check-pom-style</id>
-                            <phase>process-resources</phase>
-                            <goals>
-                                <goal>check</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -81,12 +146,52 @@
                 <artifactId>flatten-maven-plugin</artifactId>
                 <configuration>
                     <flattenMode>bom</flattenMode>
+                    <flattenDependencyMode>all</flattenDependencyMode>
                     <pomElements>
-                        <properties>flatten</properties>
                         <dependencyManagement>interpolate</dependencyManagement>
+                        <properties>flatten</properties>
                     </pomElements>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>centralRelease</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.12</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>internalmavenrepo</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <distributionManagement>
+                <repository>
+                    <id>repository</id>
+                    <name>Repository</name>
+                    <url>${deploy-url-release}</url>
+                </repository>
+                <snapshotRepository>
+                    <id>repository</id>
+                    <name>Repository</name>
+                    <url>${deploy-url-snapshot}</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>

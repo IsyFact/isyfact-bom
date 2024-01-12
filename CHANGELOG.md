@@ -1,3 +1,6 @@
+# v4.0.0
+- `IFS-2081`: isyfact-standards-bom durch IsyFact-Standards Bibliotheken und isyfact-parent ersetzt
+
 # v3.0.0
 - `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.1)
 - `IFS-1616`: Update Isy-Web auf Version 6.0.0
