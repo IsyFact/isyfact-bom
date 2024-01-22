@@ -12,6 +12,7 @@ on:
 env:
   MAVEN_CLI_OPTS: '--batch-mode --errors --fail-at-end -T 1C'
   NEXT_VERSION: '2.5.0-SNAPSHOT'
+  GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
 jobs:
   Compile:
@@ -26,4 +27,18 @@ jobs:
           distribution: temurin
           cache: maven
       - name: Compile
-        run: mvn $MAVEN_CLI_OPTS $MAVEN_OPTS -Drevision=$NEXT_VERSION -Dcheckstyle.skip compile
+        run: mvn $MAVEN_CLI_OPTS -s ./github/settings.xml -Drevision=$NEXT_VERSION -Dcheckstyle.skip compile
+
+  Snapshot:
+    if: github.event_name == 'push'
+    needs: [Maven]
+    uses: IsyFact/isyfact-standards/.github/workflows/maven_deploy_template.yml@master
+    with:
+      version: '2.5.0-SNAPSHOT'
+      jdk-version: 8
+      maven-opts: '-s ./.github/settings.xml'
+      deploy-url-snapshot: 'https://maven.pkg.github.com/IsyFact/isyfact-bom'
+    secrets:
+      DEPLOY_SERVER_USER_NAME: ${{ github.actor }}
+      DEPLOY_SERVER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
