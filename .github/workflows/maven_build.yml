@@ -1,0 +1,29 @@
+name: Build Maven
+on:
+  pull_request:
+    branches:
+      - master
+      - 'release/**'
+  push:
+    branches:
+      - master
+      - 'release/**'
+
+env:
+  MAVEN_CLI_OPTS: '--batch-mode --errors --fail-at-end -T 1C'
+  NEXT_VERSION: '3.0.0-SNAPSHOT'
+
+jobs:
+  Compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: temurin
+          cache: maven
+      - name: Compile
+        run: mvn $MAVEN_CLI_OPTS $MAVEN_OPTS -Drevision=$NEXT_VERSION -Dcheckstyle.skip compile
