@@ -15,8 +15,6 @@ env:
 jobs:
   Version:
     uses: IsyFact/isyfact-standards/.github/workflows/next_version.yml@master
-    with:
-      next-version: 4.0.0
 
   Compile:
     runs-on: ubuntu-latest
