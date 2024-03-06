@@ -1,4 +1,5 @@
 # 1.12.0
+- Isy Style 4.7.0 und Isy Web 4.13.0
 
 # 1.11.0
 - `IFE-177`,`IFE-424`: Update isy-web auf Version 4.12.0
