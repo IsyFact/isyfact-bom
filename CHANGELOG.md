@@ -2,6 +2,7 @@
 - `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.1)
 - `IFS-1616`: Update Isy-Web auf Version 6.0.0
 - `IFS-1986`: `isy-style` nach Auflösung entfernt
+- `ISY-843`: Update Isy-Web auf Version 6.0.1
 
 # v2.5.0
 - `IFS-1282`: Einführung von Maven CI-friendly Versionen
