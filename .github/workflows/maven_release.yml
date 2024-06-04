@@ -5,7 +5,6 @@ on:
 
 env:
   MAVEN_CLI_OPTS: '--batch-mode --errors --fail-at-end -T 1C'
-  GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
 jobs:
   Compile:
@@ -20,14 +19,14 @@ jobs:
           distribution: temurin
           cache: maven
       - name: Compile
-        run: mvn $MAVEN_CLI_OPTS $MAVEN_OPTS -s ./github/settings.xml -Drevision=${{ github.ref_name }} -Dcheckstyle.skip compile
+        run: mvn $MAVEN_CLI_OPTS $MAVEN_OPTS -Drevision=${{ github.ref_name }} -Dcheckstyle.skip compile
 
   Deploy:
     needs: [Compile]
     uses: IsyFact/isyfact-standards/.github/workflows/maven_deploy_template.yml@master
     with:
       version: ${{ github.ref_name }}
-      maven-opts: '-s ./.github/settings.xml -P centralRelease'
+      maven-opts: '-P centralRelease'
       deploy-server-id: ossrh
       sbom: true
       sign: true
@@ -36,4 +35,3 @@ jobs:
       GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
       DEPLOY_SERVER_USER_NAME: ${{ secrets.MAVEN_CENTRAL_USER_NAME }}
       DEPLOY_SERVER_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
-      GH_PACKAGE_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
