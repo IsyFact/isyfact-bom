@@ -24,7 +24,7 @@ jobs:
 
   Deploy:
     needs: [Compile]
-    uses: IsyFact/isyfact-standards/.github/workflows/maven_deploy_template.yml@master
+    uses: IsyFact/isy-github-actions-templates/.github/workflows/maven_deploy_template.yml@v1.0.0
     with:
       version: ${{ github.ref_name }}
       jdk-version: 8
