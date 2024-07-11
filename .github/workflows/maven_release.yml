@@ -20,7 +20,7 @@ jobs:
           distribution: temurin
           cache: maven
       - name: Compile
-        run: mvn $MAVEN_CLI_OPTS -s ./github/settings.xml -Drevision=${{ github.ref_name }} -Dcheckstyle.skip compile
+        run: mvn $MAVEN_CLI_OPTS -s ./.github/settings.xml -Drevision=${{ github.ref_name }} -Dcheckstyle.skip compile
 
   Deploy:
     needs: [Compile]
@@ -37,4 +37,4 @@ jobs:
       GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
       DEPLOY_SERVER_USER_NAME: ${{ secrets.MAVEN_CENTRAL_USER_NAME }}
       DEPLOY_SERVER_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
-      GH_PACKAGE_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+      GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
