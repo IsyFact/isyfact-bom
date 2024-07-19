@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.5.2
+## v2.5.3
 - ISY-381: Anhebung IF-Standards auf 2.5.0
 
 ## v2.4.5
