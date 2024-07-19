@@ -18,7 +18,7 @@
     </description>
 
     <properties>
-        <isy-web.version>5.4.0</isy-web.version>
+        <isy-web.version>5.4.1</isy-web.version>
         <isy-style.version>5.4.3</isy-style.version>
     </properties>
 
