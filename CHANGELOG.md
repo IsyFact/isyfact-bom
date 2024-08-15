@@ -1,3 +1,8 @@
+# v3.1.0
+- `IFS-3938`: 
+  - IsyFact Versionsanhebung auf 3.1.0
+  - Reintegration von isyfact-standards-bom (erforderlich für die korrekte Einbindung von isyfact-standards-Dependencies in IFE-Komponenten) 
+
 # v3.0.0
 - `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.1)
 - `IFS-1616`: Update Isy-Web auf Version 6.0.0

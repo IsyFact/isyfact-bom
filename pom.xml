@@ -5,7 +5,7 @@
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
         <artifactId>isyfact-standards-bom</artifactId>
-        <version>3.0.1</version>
+        <version>3.1.0</version>
     </parent>
 
     <artifactId>isyfact-bom</artifactId>
@@ -19,13 +19,21 @@
 
     <properties>
         <revision>${project.parent.version}</revision>
-        <isy-web.version>6.0.2</isy-web.version>
+        <isy-web.version>6.1.0</isy-web.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
 
             <!-- 3rd-Party Bibliotheken der IsyFact. -->
+            <dependency>
+                <groupId>de.bund.bva.isyfact</groupId>
+                <artifactId>isyfact-standards-bom</artifactId>
+                <version>${project.parent.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>de.bund.bva.isyfact</groupId>
                 <artifactId>isyfact-products-bom</artifactId>
