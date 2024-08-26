@@ -5,7 +5,7 @@
     <parent>
         <groupId>de.bund.bva.isyfact</groupId>
         <artifactId>isyfact-standards-bom</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>isyfact-bom</artifactId>
@@ -19,7 +19,7 @@
 
     <properties>
         <revision>${project.parent.version}</revision>
-        <isy-web.version>6.1.0</isy-web.version>
+        <isy-web.version>6.2.0-SNAPSHOT</isy-web.version>
     </properties>
 
     <dependencyManagement>
