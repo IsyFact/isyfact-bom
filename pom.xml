@@ -19,7 +19,7 @@
 
     <properties>
         <revision>${project.parent.version}</revision>
-        <isy-web.version>6.2.0-SNAPSHOT</isy-web.version>
+        <isy-web.version>6.2.0</isy-web.version>
     </properties>
 
     <dependencyManagement>
