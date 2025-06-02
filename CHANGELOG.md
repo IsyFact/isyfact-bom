@@ -1,3 +1,9 @@
+# v3.0.2
+- `IFS-4716`: IsyFact Versionsanhebung auf 3.0.2
+
+# v3.0.1
+- `IFS-4716`: IsyFact Versionsanhebung auf 3.0.1
+
 # v3.0.0
 - `IFS-1465`: Upgrade auf Isyfact 3 (inkl. Spring Boot 2.7.1)
 - `IFS-1616`: Update Isy-Web auf Version 6.0.0
