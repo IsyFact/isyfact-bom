@@ -3,33 +3,22 @@ on:
   release:
     types: [released]
 
-env:
-  MAVEN_CLI_OPTS: '--batch-mode --errors --fail-at-end -T 1C'
-
 jobs:
-  Compile:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout project
-        uses: actions/checkout@v4
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          java-version: 17
-          distribution: temurin
-          cache: maven
-      - name: Compile
-        run: mvn $MAVEN_CLI_OPTS $MAVEN_OPTS -Drevision=${{ github.ref_name }} -Dcheckstyle.skip compile
-
-  DeployMavenCentral:
-    needs: [Compile]
-    uses: IsyFact/isy-github-actions-templates/.github/workflows/maven_deploy_template.yml@v1.5.0
+  Build:
+    uses: IsyFact/isy-github-actions-templates/.github/workflows/maven_build_template.yml@v1.6.0
     with:
       version: ${{ github.ref_name }}
-      maven-opts: '-P centralRelease'
-      deploy-server-id: ossrh
+
+  DeployReleaseVersion:
+    needs: [Build]
+    uses: IsyFact/isy-github-actions-templates/.github/workflows/maven_deploy_template.yml@v1.6.0
+    with:
+      maven-opts: '-P bomRelease'
+      version: ${{ github.ref_name }}
+      deploy-server-id: central
       sbom: true
       sign: true
+      environment: 'Release'
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
       GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
